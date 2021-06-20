@@ -1,0 +1,11 @@
+{% extends "index.twig" %}
+{% block title %}Flowers Shop{% endblock %}
+{% block flowers %}
+    <div id="flower">
+        {% for flower in flowers %}
+            <div class="flower">
+                "<em>{{flowers.title}}"</em>.<strong>{{flowers.price}}</strong>.
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
