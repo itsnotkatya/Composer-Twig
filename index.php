@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor\autoload.php'; //подключаем файл автозагрузки композера
 
-Twig_Autholoader::register(); //авторизируем и регистрируем шаблонизатор
+Twig_Autoloader::register(); //авторизируем и регистрируем шаблонизатор
 
 $loader = new Twig_Loader_Filesistem('templates'); //указываем папку для хранения шаблонов
 $twig=new Twig_Environment($loader, array('cache' => 'cache'));
